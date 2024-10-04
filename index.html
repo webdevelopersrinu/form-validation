@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sing up page</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <section
+      class="w-screen flex-col flex items-center justify-center p-12 bg-[#F3FAF2]"
+    >
+      <h1
+        class="text-[#29A060] text-3xl mb-5 font-bold font-nunito border-b-4 pb-2 border-[#c6f4c0]"
+      >
+        sing up
+      </h1>
+      <form id="singup-form">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex flex-col gap-1 py-2">
+            <label for="fname" class="text-[#29A060] pl-3">First Name</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              class="border-2 pl-3 outline-none shadow rounded-full border-[#c6f4c0]"
+              placeholder="enter first name"
+              required
+            />
+            <p class="text-red-500 pl-3" id="fnameError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="lname" class="text-[#29A060] pl-3">First Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+              placeholder="enter last name"
+              required
+            />
+            <p class="text-red-500 pl-3" id="lnameError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="email" class="text-[#29A060] pl-3">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              placeholder="enter email"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+            />
+            <p class="text-red-500 pl-3" id="emailError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="password" class="text-[#29A060] pl-3">password</label>
+            <input
+              required
+              type="password"
+              id="password"
+              name="password"
+              placeholder="enter password"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+            />
+            <p class="text-red-500 pl-3" id="passwordError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="phone" class="text-[#29A060] pl-3">Phone Number</label>
+            <input
+              required
+              type="number"
+              id="phone"
+              name="phone"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+              placeholder="enter phone number"
+            />
+            <p class="text-red-500 pl-3" id="phoneError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="age" class="text-[#29A060] pl-3">Age</label>
+            <input
+              required
+              type="number"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+              id="age"
+              name="age"
+              placeholder="enter age"
+            />
+            <p class="text-red-500 pl-3" id="ageEroor"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="city" class="text-[#29A060] pl-3">City</label>
+            <input
+              required
+              type="text"
+              id="city"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+              name="city"
+              placeholder="enter city"
+            />
+            <p class="text-red-500 pl-3" id="cityError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="Pincode" class="text-[#29A060] pl-3">Pincode</label>
+            <input
+              required
+              type="number"
+              id="Pincode"
+              name="Pincode"
+              class="border-2 shadow outline-none rounded-full pl-3 border-[#c6f4c0]"
+              placeholder="enter Pincode"
+            />
+            <p class="text-red-500 pl-3" id="PincodeError"></p>
+          </div>
+          <div class="flex flex-col gap-1 py-2">
+            <label for="Gender" class="text-[#29A060] pl-3">Gender</label>
+            <select
+              name="Gender"
+              id="gender"
+              class="custom-select outline-none border-2 shadow rounded-full pl-3 border-[#c6f4c0] w-full -ms-expand:none"
+            >
+              <option class="bg-transparent text-[#29A060]" value="male">
+                Male
+              </option>
+              <option value="fmale">Fmale</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1 py-2">
+            <label for="address" class="text-[#29A060] pl-3">Address</label>
+            <textarea
+              required
+              name="address"
+              id="address"
+              class="border-2 shadow outline-none rounded-lg pl-3 border-[#c6f4c0]"
+            ></textarea>
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-center">
+          <button
+            type="submit"
+            class="bg-[#299E60] text-white px-4 py-1 my-3 rounded-full"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
